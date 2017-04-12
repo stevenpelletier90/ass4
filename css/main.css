@@ -31,5 +31,17 @@ nav.active {
 }
 
 .slider {
-    margin-top: -70px;
+    margin-top: -64px;
+}
+
+.index-icons {
+    font-size: 100px;
+}
+
+.indicators {
+    display: none;
+}
+
+.img1 {
+    opacity: .6;
 }
