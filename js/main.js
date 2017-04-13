@@ -2,7 +2,10 @@ $(document).ready(function() {
     $('.slider').slider();
     $('.button-collapse').sideNav();
     $('.collapsible').collapsible();
-   
+    $('#image-test').hide();
+    $('#myButton').click(function(){
+    $('#image-test').show(1000);
+    });
 });
 
 
