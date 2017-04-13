@@ -1,7 +1,9 @@
 $(document).ready(function() {
+    $('.scrollspy').scrollSpy();
     $('.slider').slider();
     $('.button-collapse').sideNav();
     $('.collapsible').collapsible();
+    $('.modal').modal();
     $('#image-test').hide();
     $('#myButton').click(function(){
     $('#image-test').show(1000);

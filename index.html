@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -15,19 +16,19 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a class="brand-logo" href="#!">KNIGHT TUTORS</a> <a class="button-collapse" data-activates="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+                    <a class="animated fadeInRight brand-logo" href="#!">KNIGHT TUTORS</a> <a class="button-collapse" data-activates="mobile-demo" href="#"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="faq.html">ABOUT</a>
+                            <a href="#footer">ABOUT</a>
                         </li>
                         <li>
-                            <a href="find.html">FAQ</a>
+                            <a href="#footer">FAQ</a>
                         </li>
                         <li>
-                            <a href="#">OUR TUTORS</a>
+                            <a href="#footer">OUR TUTORS</a>
                         </li>
                         <li>
-                            <a href="#">DONATE</a>
+                            <a href="#footer">DONATE</a>
                         </li>
                     </ul>
                 </div>
@@ -255,12 +256,27 @@
   <a href="#!" class="collection-item">Alan</a>
   <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
 </div>
-<a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')" id="myButton">Click Me</a>
+<a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')" id="myButton">MAKE AN APPOINTMENT</a>
   <img class="circle responsive-img" src="https://placeimg.com/640/640/any" id="image-test">
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1">DONATE</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>DONATE HERE</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CLOSE</a>
+    </div>
+  </div>
 
         </div>
     </div>
-    <footer class="page-footer">
+
+
+    <footer id="footer" class="page-footer scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -269,26 +285,21 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Social Media</h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#!"><i aria-hidden="true" class="fa fa-facebook-official fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#!"><i aria-hidden="true" class="fa fa-university"></i></a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
-                        </li>
-                    </ul>
+
+                            <a class="footer-icons" href="#!"><i aria-hidden="true" class="fa fa-facebook-official fa-2x"></i></a>
+
+                            <a class="footer-icons" href="#!"><i aria-hidden="true" class="fa fa-university fa-2x"></i></a>
+
+                            <a class="footer-icons" href="#!"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+
+                            <a class="footer-icons" href="#!"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2017 Knight Tutors <a class="grey-text text-lighten-4 right" href="#!">Learn More</a>
+                © 2017 Knight Tutors <a class="grey-text text-lighten-4 right" href="#modal1">Learn More</a>
             </div>
         </div>
     </footer>

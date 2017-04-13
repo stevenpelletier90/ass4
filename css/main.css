@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
+    background-color: rgba(#636363, 0.28);
+
 }
 
 main {
@@ -23,7 +25,7 @@ nav {
 }
 
 nav.active {
-    background: green;
+    background: #0095E2;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -49,4 +51,23 @@ nav.active {
 
 .features {
   padding-top: 35px;
+}
+
+.footer-icons {
+  padding: 3px;
+}
+
+.container {
+  color: rgba(#636363, .66);
+}
+
+.page-footer {
+  background-color: #1194d7;
+}
+
+a.footer-icons {
+  color: black;
+}
+a.footer-icons:hover {
+  color:white;
 }
