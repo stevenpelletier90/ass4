@@ -87,15 +87,31 @@
 	</div>
 	<div class="container">
 		<div class="row center">
-			<h2>LOGIN</h2>
-			<form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
-				<div class="alert alert-error"></div>
-				<input type="text" placeholder="User Name" name="username" required />
-				<input type="email" placeholder="Email" name="email" required />
-				<input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
-				<input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
-				<div class="avatar"><label>Select your avatar: </label><input type="file" name="avatar" accept="image/*" required /></div>
-				<input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
+
+<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
+<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
+			<form class="" action="index.html" method="post">
+				<div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+	<div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
 			</form>
 		</div>
 		<div class="divider"></div>
