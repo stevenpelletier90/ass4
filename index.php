@@ -36,16 +36,16 @@
         </div>
         <ul class="side-nav" id="mobile-demo">
             <li>
-                <a href="sass.html">ABOUT</a>
+                <a href="#">ABOUT</a>
             </li>
             <li>
-                <a href="badges.html">FAQ</a>
+                <a href="#">FAQ</a>
             </li>
             <li>
-                <a href="collapsible.html">OUR TUTORS</a>
+                <a href="#">OUR TUTORS</a>
             </li>
             <li>
-                <a href="mobile.html">DONATE</a>
+                <a href="#">DONATE</a>
             </li>
         </ul>
     </header>
@@ -85,90 +85,28 @@
             </li>
         </ul>
     </div>
-    <main></main>
+
     <div class="container">
-        <div class="row center">
-            <div class="col s12 l7 push-l5">
-                <h2>HELLO</h2>
-            </div>
-            <div class="col s12 l5 pull-l7">
-                <div class="card">
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab">
-                                <a class="active" href="#test4">SIGN UP</a>
-                            </li>
-                            <li class="tab">
-                                <a href="#test5">LOGIN</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-content grey lighten-4">
-                        <div id="test4">
-                            SIGN UP
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s6">
-                                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                            <label for="first_name">First Name</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Last Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="password" type="password" class="validate">
-                                            <label for="password">Password</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <input id="email" type="email" class="validate">
-                                            <label for="email">Email</label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div id="test5">
-                          LOGIN
-                          <div class="row">
-                              <form class="col s12">
-                                  <div class="row">
-                                      <div class="input-field col s6">
-                                          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                          <label for="first_name">First Name</label>
-                                      </div>
-                                      <div class="input-field col s6">
-                                          <input id="last_name" type="text" class="validate">
-                                          <label for="last_name">Last Name</label>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="input-field col s12">
-                                          <input id="password" type="password" class="validate">
-                                          <label for="password">Password</label>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="input-field col s12">
-                                          <input id="email" type="email" class="validate">
-                                          <label for="email">Email</label>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="row">
+  <div class="col s12 m6 offset-m3 center">
+    <h2 class="login">Login</h2>
+    <form action="script2.php" method="post" id="login">
+      <div class="input-field">
+        <input type="text" name="username" id="username">
+        <label for="username">Username</label>
+      </div>
+      <p id="loginMessage"></p>
+      <div class="input-field">
+        <input type="password" name="password" id="password">
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" id="loginSubmit" class="blue btn btn-large waves-effect waves-light col m4 offset-m4">Submit</button>
+    </form>
+
+    <p id="loginError"></p>
+    <a href="signup.html" class="col s12 signupNow">Not a user? Sign up now!</a>
+  </div>
+</div>
         <div class="divider"></div>
         <div class="row center features">
             <div class="col s12 m4 l4">
@@ -306,6 +244,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/submitform.js"></script>
 </body>
 
 </html>
