@@ -21,7 +21,8 @@
 
 			<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
 			<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
-			<form class="" action="index.html" method="post">
+
+			<form class="col s12" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" autocomplete="off">
 				<div id="login-modal" class="modal">
 					<div class="modal-content">
 						<h4>Login</h4>
@@ -57,7 +58,7 @@
 						<h4>Sign Up</h4>
 						<div class="container center">
 							<div class="row left-align">
-								<form class="col s12" action="ajax.php" method="post">
+								<form class="col s12" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" autocomplete="off">
 									<div class="row">
 										<div class="input-field col s12">
 											<input id="username" type="text">
