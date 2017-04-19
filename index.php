@@ -88,28 +88,72 @@
 	<div class="container">
 		<div class="row center">
 
-<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
-<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
+			<h2>Knight Tutors</h2>
+
+			<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
+			<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
 			<form class="" action="index.html" method="post">
 				<div id="login-modal" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+					<div class="modal-content">
+						<h4>Login</h4>
+						<div class="container center">
+							<div class="row left-align">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="username" type="text" class="validate">
+											<label for="username">Username</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="password" type="password" class="validate">
+											<label for="password">Password</label>
+										</div>
+									</div>
+									<a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>login</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">close</a>
+					</div>
+				</div>
 
-	<div id="signup-modal" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+				<div id="signup-modal" class="modal">
+					<div class="modal-content">
+						<h4>Sign Up</h4>
+						<div class="container center">
+							<div class="row left-align">
+								<form class="col s12" action="" method="post">
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="username" type="text" class="validate">
+											<label for="username">Username</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="password" type="password" class="validate">
+											<label for="password">Password</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<input id="email" type="email" class="validate">
+											<label for="email">Email</label>
+										</div>
+									</div>
+									<a class="waves-effect waves-light btn"><i class="material-icons left">done</i>submit</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">close</a>
+					</div>
+				</div>
 
 
 			</form>

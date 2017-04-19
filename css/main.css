@@ -55,10 +55,11 @@ nav.active {
 
 .footer-icons {
   padding: 3px;
+
 }
 
 .container {
-  color: rgba(#636363, .66);
+  
 }
 
 .page-footer {
@@ -66,8 +67,8 @@ nav.active {
 }
 
 a.footer-icons {
-  color: black;
+  color: #fff;
 }
 a.footer-icons:hover {
-  color:white;
+  color:rgb(0, 124, 214);
 }
