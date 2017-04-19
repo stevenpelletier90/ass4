@@ -12,79 +12,8 @@
 </head>
 
 <body>
-	<header>
-		<div class="navbar-fixed">
-			<nav>
-				<div class="nav-wrapper">
-					<a class="animated fadeInRight brand-logo" href="#!">KNIGHT TUTORS</a> <a class="button-collapse" data-activates="mobile-demo" href="#"><i class="material-icons">menu</i></a>
-					<ul class="right hide-on-med-and-down">
-						<li>
-							<a href="#footer">ABOUT</a>
-						</li>
-						<li>
-							<a href="#footer">FAQ</a>
-						</li>
-						<li>
-							<a href="#footer">OUR TUTORS</a>
-						</li>
-						<li>
-							<a href="#footer">DONATE</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<ul class="side-nav" id="mobile-demo">
-			<li>
-				<a href="#">ABOUT</a>
-			</li>
-			<li>
-				<a href="#">FAQ</a>
-			</li>
-			<li>
-				<a href="#">OUR TUTORS</a>
-			</li>
-			<li>
-				<a href="#">DONATE</a>
-			</li>
-		</ul>
-	</header>
-	<div class="slider">
-		<ul class="slides">
-			<li>
-				<img class="banner-image" src="img/banner1.jpg">
-				<!-- random image -->
-				<div class="caption center-align">
-					<h3>This is our big Tagline!</h3>
-					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			</li>
-			<li>
-				<img class="banner-image" src="img/deskimage.jpg">
-				<!-- random image -->
-				<div class="caption left-align">
-					<h3>Left Aligned Caption</h3>
-					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			</li>
-			<li>
-				<img class="banner-image" src="img/banner2.jpg">
-				<!-- random image -->
-				<div class="caption right-align">
-					<h3>Right Aligned Caption</h3>
-					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			</li>
-			<li>
-				<img class="banner-image" src="img/banner3.jpg">
-				<!-- random image -->
-				<div class="caption center-align">
-					<h3>This is our big Tagline!</h3>
-					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			</li>
-		</ul>
-	</div>
+	<?php include("includes/header.php"); ?>
+
 	<div class="container">
 		<div class="row center">
 
@@ -111,9 +40,11 @@
 											<label for="password">Password</label>
 										</div>
 									</div>
-									<a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>login</a>
+
 								</form>
+
 							</div>
+							<a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>login</a>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -126,28 +57,30 @@
 						<h4>Sign Up</h4>
 						<div class="container center">
 							<div class="row left-align">
-								<form class="col s12" action="" method="post">
+								<form class="col s12" action="ajax.php" method="post">
 									<div class="row">
 										<div class="input-field col s12">
-											<input id="username" type="text" class="validate">
+											<input id="username" type="text">
 											<label for="username">Username</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="input-field col s12">
-											<input id="password" type="password" class="validate">
+											<input id="password" type="password">
 											<label for="password">Password</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="input-field col s12">
-											<input id="email" type="email" class="validate">
+											<input id="email" type="email">
 											<label for="email">Email</label>
 										</div>
 									</div>
-									<a class="waves-effect waves-light btn"><i class="material-icons left">done</i>submit</a>
+
 								</form>
+
 							</div>
+							<a class="waves-effect waves-light btn"><i class="material-icons left">done</i>submit</a>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -179,7 +112,7 @@
 		<div class="divider"></div>
 		<div class="row">
 			<div class="col l6">
-				<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="card-panel grey lighten-5 z-depth-1 hoverable">
 					<div class="row valign-wrapper">
 						<div class="col s2"><img class="circle responsive-img" src="https://placeimg.com/640/640/any"></div>
 						<div class="col s10">
@@ -189,7 +122,7 @@
 				</div>
 			</div>
 			<div class="col l6">
-				<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="card-panel grey lighten-5 z-depth-1 hoverable">
 					<div class="row valign-wrapper">
 						<div class="col s2"><img class="circle responsive-img" src="https://placeimg.com/640/640/any"></div>
 						<div class="col s10">
@@ -199,7 +132,7 @@
 				</div>
 			</div>
 			<div class="col l6">
-				<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="card-panel grey lighten-5 z-depth-1 hoverable">
 					<div class="row valign-wrapper">
 						<div class="col s2"><img class="circle responsive-img" src="https://placeimg.com/640/640/any"></div>
 						<div class="col s10">
@@ -227,13 +160,31 @@
 				</div>
 			</div>
 			<div class="col l6">
-				<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="card-panel grey lighten-5 z-depth-1 hoverable">
 					<div class="row valign-wrapper">
 						<div class="col s2"><img class="circle responsive-img" src="https://placeimg.com/640/640/any"></div>
 						<div class="col s10">
 							<span class="black-text">This is a square image. Add the "circle" class to it to make it appear circular.</span>
 						</div>
 					</div>
+					<ul class="collapsible" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header">
+								<span class="new badge">4</span><i class="material-icons">filter_drama</i>First
+							</div>
+							<div class="collapsible-body">
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header">
+								<span class="badge">1</span><i class="material-icons">place</i>Second
+							</div>
+							<div class="collapsible-body">
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -256,32 +207,9 @@
 			</div>
 		</div>
 	</div>
-	<footer class="page-footer scrollspy" id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Find Us!</h5>
-					<p class="grey-text text-lighten-4">Use our API to kind our stores!</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Social Media</h5>
-					<a class="footer-icons" href="#!">
-						<i aria-hidden="true" class="fa fa-facebook-official fa-2x"></i></a>
-					<a class="footer-icons" href="#!">
-						<i aria-hidden="true" class="fa fa-university fa-2x"></i></a>
-					<a class="footer-icons" href="#!">
-						<i aria-hidden="true" class="fa fa-github fa-2x"></i></a>
-					<a class="footer-icons" href="#!">
-						<i aria-hidden="true" class="fa fa-twitter fa-2x"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2017 Knight Tutors <a class="grey-text text-lighten-4 right" href="#modal1">Learn More</a>
-			</div>
-		</div>
-	</footer>
+
+	<?php include("includes/footer.php"); ?>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 	<script src="js/main.js"></script>
