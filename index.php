@@ -22,27 +22,19 @@
 			<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
 			<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
 
-			<form class="col s12" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" autocomplete="off">
 				<div id="login-modal" class="modal">
 					<div class="modal-content">
 						<h4>Login</h4>
 						<div class="container center">
 							<div class="row left-align">
-								<form class="col s12">
-									<div class="row">
-										<div class="input-field col s12">
-											<input id="username" type="text" class="validate">
-											<label for="username">Username</label>
-										</div>
-									</div>
-									<div class="row">
-										<div class="input-field col s12">
-											<input id="password" type="password" class="validate">
-											<label for="password">Password</label>
-										</div>
-									</div>
-
-								</form>
+								<form method="POST"><!-- We can use GET also as submitting method-->
+<label>Username</label>
+<input id="username" name="username" type="text"><!-- the username input -->
+<label>Password</label>
+<input id="password" name="pasword" type="password"><!-- the password input -->
+<input id="submit_login" name="submit" value="Login" type="submit"><!-- submit button -->
+<span class="errormess"></span><!-- the ajax result wrapper -->
+</form>
 
 							</div>
 							<a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>login</a>
@@ -58,7 +50,7 @@
 						<h4>Sign Up</h4>
 						<div class="container center">
 							<div class="row left-align">
-								<form class="col s12" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" autocomplete="off">
+
 									<div class="row">
 										<div class="input-field col s12">
 											<input id="username" type="text">
@@ -214,6 +206,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/function.js" charset="utf-8"></script>
 </body>
 
 </html>
