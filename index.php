@@ -14,102 +14,46 @@
 <body>
 	<?php include("includes/header.php"); ?>
 	<div class="container">
-		<div class="row">
-			<form id="ajax-contact" method="post" action="mailer.php">
-    <div class="field">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="field">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="field">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <div class="field">
-        <button type="submit">Send</button>
-    </div>
-</form>
-		</div>
-		<div class="row">
+				<div class="row">
 			<div class="col s6">
-				<h2>Knight Tutors</h2>
-				<a class="waves-effect waves-light btn" href="#login-modal"><i class="material-icons left">perm_identity</i>login</a>
+				<h2>Schedule an Appointment!</h2>
+				<div id="form-messages"></div>
 
-				<a class="waves-effect waves-light btn" href="#signup-modal"><i class="material-icons left">mode_edit</i>sign up</a>
+				<form id="ajax-contact" method="post" action="mailer.php">
+					<div class="field">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+
+					<div class="field">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<div class="field">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" required></textarea>
+					</div>
+
+					<div class="field">
+						<button type="submit">Send</button>
+					</div>
+				</form>
 			</div>
 
 			<div class="col s6">
-				<h3>Test Heading</h3>
-				<p class="flow-text">We truly believe that learning should be accessible, affordable, and more convenient for everyone. For 10 years, Knight Tutors has been working very hard to provide the best service for our students to make them as successful as possible. Our center
+				<h2>Knight Tutors</h2>
+				<p class="flow-text main_text">We truly believe that learning should be accessible, affordable, and more convenient for everyone. For 10 years, Knight Tutors has been working very hard to provide the best service for our students to make them as successful as possible. Our center
 					and convenient locations are very committed to and involved with our community, regularly attending area events and acting as a resource for local educators. Our highly qualified tutors include public and private school teachers, certified teachers,
 					college professors, graduate students and professionals with Master’s Degrees and Ph.D.‘s. As well as accountants, engineers, writers, and business owners. These tutors are passionate about helping their students and the majority of them have been
 					with us for many years.</p>
 
 				<div class="more-text">
-					<p class="flow-text">We help our students exceed their goals and set them up for success in their futures. Whether the goal is passing FSA, getting into a dream college, or acing AP Calculus, Knight Tutors has the experience and the expertise to make it happen! Knight
+					<p class="flow-text main_text">We help our students exceed their goals and set them up for success in their futures. Whether the goal is passing FSA, getting into a dream college, or acing AP Calculus, Knight Tutors has the experience and the expertise to make it happen! Knight
 						Tutors is the perfect place to help students develop the skills, confidence, and motivation to shine, whether the student needs to get back on track, a grade level ahead, or well-prepared for its future studies. Give us a call today to get your
 						student started on the path to success!</p>
 				</div>
 				<a class="waves-effect waves-light btn" id="show">Read More</a>
-			</div>
-
-
-
-			<div class="modal" id="login-modal">
-				<div class="modal-content">
-					<h4>Login</h4>
-					<div class="container center">
-						<div class="row left-align">
-							<form method="post">
-								<!-- We can use GET also as submitting method-->
-								<label>Username</label> <input id="username" name="username" type="text">
-								<!-- the username input -->
-								<label>Password</label> <input id="password" name="pasword" type="password">
-								<!-- the password input -->
-								<input id="submit_login" name="submit" type="submit" value="Login">
-								<!-- submit button -->
-								<span class="errormess"></span>
-								<!-- the ajax result wrapper -->
-							</form>
-						</div><a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>login</a>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">close</a>
-				</div>
-			</div>
-			<div class="modal" id="signup-modal">
-				<div class="modal-content">
-					<h4>Sign Up</h4>
-					<div class="container center">
-						<div class="row left-align">
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="username" type="text"> <label for="username">Username</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="password" type="password"> <label for="password">Password</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="email" type="email"> <label for="email">Email</label>
-								</div>
-							</div>
-						</div><a class="waves-effect waves-light btn"><i class="material-icons left">done</i>submit</a>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a class="modal-action modal-close waves-effect waves-green btn-flat" href="#!">close</a>
-				</div>
 			</div>
 		</div>
 		<div class="divider"></div>
@@ -132,7 +76,9 @@
 		</div>
 		<div class="divider"></div>
 		<div class="row">
+
 			<h2>Customer Reviews</h2>
+
 			<div class="col l4">
 				<div class="card-panel grey lighten-5 z-depth-1 hoverable">
 					<div class="row valign-wrapper">
@@ -168,7 +114,8 @@
 		</div>
 		<div class="divider"></div>
 		<div class="row">
-			<h2>Frequently Asked Questions</h2>
+			<div class="col s12 m6 l6">
+			<h2 class="scrollspy" id="faq">Frequently Asked Questions</h2>
 			<ul class="collapsible" data-collapsible="accordion">
 				<li>
 					<div class="collapsible-header"><i class="material-icons">search</i>1. How do I choose a tutor?</div>
@@ -187,18 +134,19 @@
 					<div class="collapsible-body"><span class="flow-text">If for any reason you are not satisfied with your selected tutor after the initial session, please call us and we will help you identify a tutor who might be a better fit. This second 1 to 2 hour session is delivered at no charge. If you remain dissatisfied following the second session, but before any subsequent session, we will issue you a full refund of all unused hours.</span></div>
 				</li>
 			</ul>
-		</div>
-		<div class="container">
-			<div class="row">
-				<a class="btn" href="#!" id="myButton" onclick="Materialize.fadeInImage('#image-test')">FIND OUR LOCATIONS</a>
-
+			</div>
+			<div class="col s12 m6 l6">
+				<h3>Where are we?</h3>
 				<div id="image-test">
 					<div id="map"></div>
 				</div>
-				<!-- Modal Trigger -->
+				<a class="btn" href="#!" id="myButton" onclick="Materialize.fadeInImage('#image-test')">FIND OUR LOCATIONS</a>
 				<a class="waves-effect waves-light btn" href="#modal1">DONATE</a>
 			</div>
 		</div>
+
+
+
 
 		<!-- Modal Structure -->
 		<div class="modal bottom-sheet" id="modal1">
@@ -216,9 +164,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?key=AIzaSyAj81a3Z2nVFw-aaT5ZfFu_wfH-3v1HZp8"></script>
+
 	<script src="js/map.js" charset="utf-8"></script>
 	<script src="js/main.js"></script>
 	<script src="js/function.js"></script>
+	<script src="js/app.js"></script>
+
 </body>
 
 </html>

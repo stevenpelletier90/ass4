@@ -1,18 +1,18 @@
-<header>
+<header class="scrollspy" id="header">
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a class="animated fadeInRight brand-logo" href="#!">KNIGHT TUTORS</a> <a class="button-collapse" data-activates="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+        <a class="animated fadeInRight brand-logo" href="#header">KNIGHT TUTORS</a> <a class="button-collapse" data-activates="mobile-demo" href="#"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
 
           <li>
             <a href="#faq">FAQ</a>
           </li>
           <li>
-            <a href="#directory">FIND TUTORS</a>
+            <a href="database/directory.php">FIND TUTORS</a>
           </li>
           <li>
-            <a href="#footer">DONATE</a>
+            <a href="#modal1">DONATE</a>
           </li>
           <li>
             <a href="about.php">ABOUT</a>

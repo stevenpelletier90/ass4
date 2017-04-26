@@ -10,6 +10,7 @@ $(document).ready(function() {
   $('.more-text').hide();
   $("#show").click(function(){
     $(".more-text").toggle(2000);
+    $(this).text($(this).text() == 'Read More' ? 'Read Less' : 'Read More');
 });
 });
 
