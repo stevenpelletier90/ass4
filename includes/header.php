@@ -27,7 +27,7 @@
       <a href="#faq">FAQ</a>
     </li>
     <li>
-      <a href="#directory">OUR TUTORS</a>
+      <a href="database/directory.php">OUR TUTORS</a>
     </li>
     <li>
       <a href="#footer">DONATE</a>
