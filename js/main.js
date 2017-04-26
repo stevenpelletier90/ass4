@@ -4,10 +4,13 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.collapsible').collapsible();
   $('.modal').modal();
-  $('#image-test').hide();
   $('#myButton').click(function() {
-    $('#image-test').show(1000);
+    $('#image-test').toggle(1000);
   });
+  $('.more-text').hide();
+  $("#show").click(function(){
+    $(".more-text").toggle(2000);
+});
 });
 
 

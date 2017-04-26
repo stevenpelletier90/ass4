@@ -32,7 +32,7 @@ h2 {
 }
 
 p {
-	color: white;
+	color: black;
 	text-align: center;
 }
 
@@ -66,7 +66,7 @@ hr {
 }
 
 .blue-section {
-	background-color: #5c5c5c;
+	background-color: white;
 }
 
 .section h1 {
@@ -97,7 +97,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-	color: #5c5c5c;
+	color: white;
 }
 
 footer ul li:nth-child(1) {
@@ -122,16 +122,16 @@ footer ul li:nth-child(1) {
 }
 
 form {
-	background-color: #5c5c5c;
+	background-color: white;
 	padding: 20px;
-	color: white;
-	font-family: 'Comic Sans MS', sans-serif;
+	color: black;
+	font-family: 'Arial', sans-serif;
 }
 
 .waves-input-wrapper {
     background-color: white;
-	color: #5c5c5c;
-	font-family: 'Comic Sans MS', sans-serif;
+	color: white;
+	font-family: 'Arial', sans-serif;
 }
 
 .btn:hover {
@@ -142,11 +142,14 @@ form {
 .success {
 	background-color: #c0ffc0;
     border: solid 2px #75da75;
-	font-family: 'Comic Sans MS', sans-serif;
+
 }
 
 .error {
 	background-color: #ffc6c6;
     border: solid 2px #ea7676;
-	font-family: 'Comic Sans MS', sans-serif;
+}
+
+.caption {
+  color:
 }

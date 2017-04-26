@@ -59,7 +59,7 @@ nav.active {
 }
 
 .container {
-  
+
 }
 
 .page-footer {
@@ -71,4 +71,9 @@ a.footer-icons {
 }
 a.footer-icons:hover {
   color:rgb(0, 124, 214);
+}
+
+#map {
+ height: 500px;
+ width: 500px;
 }
