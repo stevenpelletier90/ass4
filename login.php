@@ -1,6 +1,6 @@
 <?php
 /*session_start();*/
-require_once('connect.php');
+require_once('connection.php');
 if(isset($_POST) & !empty($_POST)){
 	$user = mysql_real_escape_string($_POST['username']);
 	$pass = md5($_POST['password']);
