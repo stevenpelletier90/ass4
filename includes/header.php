@@ -7,6 +7,7 @@
                   <li><a href="index.php">HOME</a></li>
                   <li><a href="index.php#faq">FAQ</a></li>
                   <li><a href="directory.php">FIND A TUTOR</a></li>
+                  <li><a href="cart.php">RESOURCES</a></li>
                   <li><a href="about.php">ABOUT</a></li>
               </ul>
               <ul class="right hide-on-med-and-down">
@@ -20,6 +21,7 @@
       <li><a href="index.php">HOME</a></li>
       <li><a href="index.php#faq">FAQ</a></li>
       <li><a href="directory.php">FIND A TUTOR</a></li>
+      <li><a href="cart.php">RESOURCES</a></li>
       <li><a href="about.php">ABOUT</a></li>
   </ul>
 </header>
