@@ -24,6 +24,13 @@ $(window).on('scroll', function() {
     //remove the background property so it comes transparent again (defined in your css)
     $('nav').removeClass('active');
   }
+
+  if ($(window).scrollTop() > 50) {
+    $('nav ul a').addClass('scrolled');
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $('nav ul a').removeClass('scrolled');
+  }
 });
 
 $(document).ready(function() {

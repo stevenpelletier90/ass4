@@ -28,9 +28,24 @@ nav {
   transition: all 0.5s ease;
   background-color: transparent;
   box-shadow: none;
-  font-family: 'Droid Serif', serif;
-  color: #2b4d6c;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 2px 2px 10px black;
 }
+
+nav ul a {
+  font-weight: bold;
+  color: #e6fdff;
+}
+
+
+nav ul a.scrolled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: white;
+}
+
 
 nav.active {
   background: #0095E2;
@@ -38,6 +53,7 @@ nav.active {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  color: white;
 }
 
 .brand-logo {
@@ -99,6 +115,7 @@ h5 {
 
 footer {
   margin-top: 50px;
+  text-shadow: 2px 2px 10px black;
 }
 
 .footer-icons {
@@ -562,4 +579,13 @@ path {
 
 #about-header {
   margin-bottom: -40px;
+}
+
+.caption {
+  text-shadow: 2px 2px 10px black;
+}
+
+.banner-captions {
+  color: rgb(101, 199, 255);
+
 }
