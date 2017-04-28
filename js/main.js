@@ -4,6 +4,8 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.collapsible').collapsible();
   $('.modal').modal();
+    $('#modal2').modal();
+    $('#modal3').modal();
   $('#myButton').click(function() {
     $('#image-test').toggle(1000);
   });
@@ -100,3 +102,103 @@ $(function() {
 	});
 
 });
+
+
+//animaiton code
+$('path').each(function(i,el){
+  var length = el.getTotalLength();
+  $(el).data('width',$(el).css('stroke-width')).css({
+    'stroke-dasharray': length+' '+length,
+    'stroke-dashoffset': length,
+    'stroke-width': 0
+  })
+})
+
+//start animation
+function animate(){
+  $('path').each(function(i,el){
+    $(el).css('stroke-width',1).delay(i*150).animate({
+      'stroke-dashoffset': 0
+    },8*1000 - i*150).animate({
+      'stroke-width': $(el).data('width')
+    });
+  })
+
+}
+
+animate();
+
+//books
+
+var Page = (function() {
+
+                var config = {
+                        $bookBlock : $( '#bb-bookblock' ),
+                        $navNext : $( '#bb-nav-next' ),
+                        $navPrev : $( '#bb-nav-prev' ),
+
+                    },
+                    init = function() {
+                        config.$bookBlock.bookblock( {
+                            speed : 800,
+                            shadowSides : 0.8,
+                            shadowFlip : 0.7
+                        } );
+                        initEvents();
+                    },
+                    initEvents = function() {
+
+                        var $slides = config.$bookBlock.children();
+
+                        // add navigation events
+                        config.$navNext.on( 'click touchstart', function() {
+                            config.$bookBlock.bookblock( 'next' );
+                            return false;
+                        } );
+
+                        config.$navPrev.on( 'click touchstart', function() {
+                            config.$bookBlock.bookblock( 'prev' );
+                            return false;
+                        } );
+
+
+
+                        // add swipe events
+                        $slides.on( {
+                            'swipeleft' : function( event ) {
+                                config.$bookBlock.bookblock( 'next' );
+                                return false;
+                            },
+                            'swiperight' : function( event ) {
+                                config.$bookBlock.bookblock( 'prev' );
+                                return false;
+                            }
+                        } );
+
+                        // add keyboard events
+                        $( document ).keydown( function(e) {
+                            var keyCode = e.keyCode || e.which,
+                                arrow = {
+                                    left : 37,
+                                    up : 38,
+                                    right : 39,
+                                    down : 40
+                                };
+
+                            switch (keyCode) {
+                                case arrow.left:
+                                    config.$bookBlock.bookblock( 'prev' );
+                                    break;
+                                case arrow.right:
+                                    config.$bookBlock.bookblock( 'next' );
+                                    break;
+                            }
+                        } );
+                    };
+
+                    return { init : init };
+
+            })();
+
+
+                            Page.init();

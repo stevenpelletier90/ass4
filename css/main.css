@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
+@font-face {
+  font-family: 'arrows';
+  src: url('../fonts/arrows/arrows.eot');
+  src: url('../fonts/arrows/arrows.eot?#iefix') format('embedded-opentype'), url('../fonts/arrows/arrows.woff') format('woff'), url('../fonts/arrows/arrows.ttf') format('truetype'), url('../fonts/arrows/arrows.svg#arrows') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Oswald', sans-serif;
     background-color: rgba(#636363, 0.28);
 
 }
@@ -32,6 +41,31 @@ nav.active {
     transition: all 0.5s ease;
 }
 
+.brand-logo {
+  margin-left: 26px;
+  font-family: 'Eagle Lake', cursive;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Lato', sans-serif;
+  color: #0095E2;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+}
+
+h5 {
+  font-family: 'Eagle Lake', cursive;
+}
+
+#logo {
+  margin-left: 330px;
+  height: 80px;
+  margin-top: -5px;
+
+
+}
 .slider {
     margin-top: -64px;
 }
@@ -44,14 +78,32 @@ nav.active {
     display: none;
 }
 
+
 .banner-image {
-    opacity: .6;
+    opacity: .4;
 
 }
 
 .features {
   padding-top: 35px;
 }
+
+.feature-header {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.feature-text {
+  text-align: justify;
+  padding: 30px;
+  font-size: 20px;
+}
+footer {
+  margin-top: 50px;
+}
+
+
 
 .footer-icons {
   padding: 3px;
@@ -114,7 +166,7 @@ button {
   border: none;
   font-size: 0.9rem;
   padding: 0.5rem 0.8em;
-  background: #69c773;
+  background: #1194d7;
   border-bottom: 1px solid #498b50;
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -160,4 +212,316 @@ button:active {
 
 .main_text {
   font-size: 20px;
+  text-align: justify;
+}
+
+.progress-bg {
+	margin: 0 auto;
+	width: 65%;
+	height: 78px;
+	border-radius: 10px;
+  text-align: center;
+	background: url("http://www.atsu.edu/stlclinic/images/progress-bar-bg.jpg") repeat;
+	-moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;
+}
+
+.progress-bar {
+	height: 78px;
+	border-radius: 10px;
+	float: left;
+	width: 50%;
+	/* fallback */
+	background-color: #1c314a;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #1c314a, #27425f);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #1c314a, #27425f);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #1c314a, #27425f);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #1c314a, #27425f);
+}
+
+.progress-bg h3.goal, .progress-bg h3.raised {
+	font-family: Arial,sans-serif;
+  font-size: 2.7em;
+  font-weight: 600;
+	line-height: 78px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+
+
+.progress-bg h3.raised {
+	color: #fff;
+	margin: 14px 25px 0 50px;
+	padding: 0 25px 0 0;
+}
+
+.progress-bg h3.goal {
+	color: #b2b2b2;
+  text-align: center;
+}
+
+body .progress-bg h3.raised {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+	float: right;
+	display: inline;
+	padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress-bg div {
+	-webkit-animation: progress-bar 2s ease forwards;
+	-moz-animation: progress-bar 2s ease forwards;
+	-o-animation: progress-bar 2s ease forwards;
+	animation: progress-bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-moz-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-o-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+#donate-btn {
+  margin-top: 25px;
+}
+
+.success {
+	background-color: #c0ffc0;
+    border: solid 2px #75da75;
+
+}
+
+.error {
+	background-color: #ffc6c6;
+    border: solid 2px #ea7676;
+}
+
+.review-pics {
+  height: 100px;
+}
+
+.review-text {
+  font-size: 20px;
+}
+
+.caption {
+  margin-top:75px;
+}
+
+#first {
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  color: rgb(3, 87, 148);
+}
+#second {
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  color: rgb(3, 87, 148);
+}
+#third {
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  color: rgb(3, 87, 148);
+}
+
+/*Add to main for animation*/
+
+svg {
+  width: 50%;
+  height: 50%;
+}
+
+path {
+  fill: none;
+  stroke: black;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/*Books */
+
+.bb-custom-side {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  /* Centering with flexbox */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.bb-custom-wrapper {
+  width: 920px;
+  position: relative;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bb-custom-wrapper .bb-bookblock {
+  width: 920px;
+  height: 500px;
+  box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+}
+
+.bb-custom-wrapper h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: 0.4em 0 1em;
+}
+
+.bb-custom-wrapper nav {
+  width: 100%;
+  height: 2px;
+  margin: 1em auto 0;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.bb-custom-wrapper nav a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 2px;
+  background: #1194d7;
+  color: #fff;
+  font-size: 0;
+  margin: 2px;
+}
+
+.bb-custom-wrapper nav a:hover {
+  opacity: 0.6;
+}
+
+.bb-custom-icon:before {
+  font-family: 'arrows';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bb-custom-icon-first:before, .bb-custom-icon-last:before {
+  content: "\e002";
+}
+
+.bb-custom-icon-arrow-left:before, .bb-custom-icon-arrow-right:before {
+  content: "\e003";
+}
+
+.bb-custom-icon-arrow-left:before, .bb-custom-icon-first:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/* No JS */
+
+.no-js .bb-custom-wrapper {
+  height: auto;
+}
+
+.no-js .bb-custom-content {
+  height: 470px;
+}
+
+.bookpad {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#arrow {
+  background: none;
+}
+
+#about-header {
+  margin-bottom: -40px;
 }

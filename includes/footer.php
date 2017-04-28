@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Find Us!</h5>
-        <p class="grey-text text-lighten-4">Use our API to kind our stores!</p>
+        <h5 class="white-text">Knight Tutors</h5>
+        <p class="grey-text text-lighten-4">The best tutoring service in Orlando!</p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Social Media</h5>
