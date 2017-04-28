@@ -20,7 +20,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2017 Knight Tutors <a class="grey-text text-lighten-4 right" href="#modal1">Learn More</a>
+      &copy 2017 Knight Tutors <a class="grey-text text-lighten-4 right" href="#modal1">Learn More</a>
     </div>
   </div>
 </footer>

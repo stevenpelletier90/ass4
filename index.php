@@ -8,7 +8,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 	<?php include("includes/header.php"); ?>
@@ -96,7 +96,7 @@
 						<span class="card-title activator grey-text text-darken-4"><strong>Stephany Jordan</strong> <br> Education Major <br> UCF<i class="material-icons right">more_vert</i></span>
 					</div>
 					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4"><strong>Stephany Jordan</strong> <br> Education Major <br> UCF<i class="material-icons right">close</i></span>
+						<span class="card-title grey-text text-darken-4"><strong>Stephanie Jordan</strong> <br> Education Major <br> UCF<i class="material-icons right">close</i></span>
 						<p>"This is Exactly what I was looking for. If you want a friendly, reliable tutor, look no further."</p>
 					</div>
 				</div>
